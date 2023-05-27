@@ -1,0 +1,23 @@
+{
+  "name": "artemis-1",
+  "version": "1.0.0",
+  "description": "This gulp script automates the tasks of building Microsoft SharePoint solution packages. Specifically, it automatically increments the solution's version and then cleans, bundles, and packages the solution.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmetgspace/artemis-1.git"
+  },
+  "author": "Mehmet Guler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehmetgspace/artemis-1/issues"
+  },
+  "homepage": "https://github.com/mehmetgspace/artemis-1#readme",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-sequence": "^1.0.0"
+  }
+}
