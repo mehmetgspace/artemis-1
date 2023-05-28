@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/mehmetgspace/artemis-1#readme",
   "devDependencies": {
-    "gulp": "~3.9.1",
-    "gulp-sequence": "^1.0.0"
+    "gulp": "~3.9.1"
   }
 }
