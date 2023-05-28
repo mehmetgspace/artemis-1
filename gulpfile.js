@@ -74,8 +74,12 @@ gulp.task('dist', (done) => {
         console.error(stderr);
 
         // If there was an error, print it but don't stop the task
+        // Bundle task errors usually don't create a blocking situation for package creation, so we continue processing.
+        // Optionally, you can uncomment the related lines to halt the task upon encountering a bundle error.
         if (error) {
           console.error(`bundle task failed with error: ${error}`);
+          // done(error);
+          // return;
         }
 
         // Run the 'package-solution' gulp task

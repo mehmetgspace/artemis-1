@@ -1,6 +1,6 @@
 {
   "name": "artemis-1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This gulp script automates the tasks of building Microsoft SharePoint solution packages. Specifically, it automatically increments the solution's version and then cleans, bundles, and packages the solution.",
   "main": "index.js",
   "scripts": {
