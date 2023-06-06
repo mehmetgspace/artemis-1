@@ -102,5 +102,15 @@ gulp.task('dist', (done) => {
   });
 });
 
+// This task enables the 'serve' task in the current build environment
+const getTasks = build.rig.getTasks;
+build.rig.getTasks = function () {
+  const result = getTasks.call(build.rig);
+
+  result.set('serve', result.get('serve-deprecated'));
+
+  return result;
+};
+
 // Initialize gulp with the Microsoft SharePoint build tools
 build.initialize(gulp);
